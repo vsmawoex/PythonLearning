@@ -94,7 +94,7 @@ def cli():
     to_station = stations.get(arguments['<to>'])
     date = arguments['<date>']
     # 构建 URL
-    url = 'https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date={}&leftTicketDTO.from_station=' \
+    url = 'https://kyfw.12306.cn/otn/leftTicket/queryZ?leftTicketDTO.train_date={}&leftTicketDTO.from_station=' \
           '{}&leftTicketDTO.to_station={}&purpose_codes=ADULT'.format(date, from_station, to_station)
     options = ''.join([
         key for key, value in arguments.items() if value is True
